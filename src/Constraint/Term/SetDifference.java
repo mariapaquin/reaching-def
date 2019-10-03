@@ -33,9 +33,9 @@ public class SetDifference extends ConstraintTerm {
             copy.put(var, ds2.get(var));
         }
 
-        definitionSet.killDefinitions(varKilled);
-
         definitionSet = copy;
+
+        definitionSet.killDefinitions(varKilled);
     }
 
     public DefinitionSet getDefinitionSet() {
